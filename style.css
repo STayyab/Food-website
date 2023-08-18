@@ -1,0 +1,338 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+
+  --navbar-height: 59px;
+
+}
+
+#navbar {
+  display: flex;
+  position: relative;
+}
+
+#logo {
+  margin: 10px 34px;
+
+}
+
+#logo img {
+  height: 70px;
+  width: 70px;
+  margin: 3px 6px;
+
+}
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar::before {
+  content: "";
+  background-color: rgba(151, 142, 139, 0.623);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 3px 22px;
+  margin-top: 28px;
+  text-decoration: none;
+  color: white;
+}
+
+#navbar ul li :hover {
+  color: red;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 450px;
+
+
+}
+
+#home::before {
+  content: "";
+  background: url('./images/vagetable.jpg');
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.89;
+  background-repeat: no-repeat;
+
+}
+
+.btn-1 {
+
+  color: white;
+}
+
+p {
+  font-size: 15px;
+}
+
+.h-primary {
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  margin-left: 20px;
+  height: 40px;
+  width: 120px;
+  font-size: 15px;
+  border-radius: 10px;
+
+
+}
+
+.btn:hover {
+  background-color: yellow;
+}
+
+#left {
+  margin-left: 100px;
+
+}
+
+/* sectin 2 */
+h1 {
+  text-align: center;
+}
+
+#services {
+  font-size: 2.8rem;
+}
+
+.box {
+  border: 2px solid palevioletred;
+  margin: 10px 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: aliceblue;
+
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 15px;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.three {
+  border: 2px solid palevioletred;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: aliceblue;
+  ;
+  margin: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.Two {
+  border: 2px solid palevioletred;
+  margin: 10px 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: aliceblue;
+
+}
+
+/*  client sectin 3 */
+h1 {
+  font-size: 2.8rem;
+}
+
+#Clients-section {
+  min-height: 344px;
+  position: relative;
+
+}
+
+#Clients-section::before {
+  content: "";
+  position: absolute;
+  background: url('./images/home-img.jpg');
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-position: centerq;
+  background-size: cover;
+
+}
+
+#Clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.Clients-item img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 70px;
+  height: 100px;
+  max-width: 100%;
+}
+
+.clients-item {
+  padding: 34px;
+}
+
+/* #contact section 3 */
+
+#Contact {
+  position: relative;
+}
+
+#Contact::before {
+  content: "";
+  position: absolute;
+  background: url(./images/cash.jpg);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-position: centerq;
+  background-size: cover;
+
+}
+
+#Contact-box {
+  padding-bottom: 34px;
+}
+
+#Contact-box label {
+  display: block;
+}
+
+#Contact-box input,
+#Contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+button {
+  border: 2px solid black;
+  height: 40px;
+  width: 140px;
+  border-radius: 12px;
+  background-color: white;
+  margin-left: 120px;
+}
+
+button:hover {
+  color: brown;
+  background-color: yellow;
+}
+
+#Contact-box label {
+  font-size: 1.3rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:992px) {
+  .flex {
+    display: block;
+    margin: 10px 20px;
+    justify-content: center;
+  }
+
+  .box img {
+    max-width: 100%;
+  }
+
+  .three img {
+    max-width: 100%;
+  }
+
+  .Two img {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width:768px) {
+  #home {
+
+    padding: 0px;
+
+  }
+
+}
+
+@media(max-width:576px) {
+  #navbar {
+    display: block;
+    background-color: gray;
+  }
+
+  #logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media(max-width:576px) {
+  .container {
+    flex-direction: column;
+
+  }
+}

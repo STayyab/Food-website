@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+</head>
+<style>
+   *{
+    margin: 0px;
+    padding: 0px;
+   }
+    .row{
+        display: flex;
+       /* flex-wrap: wrap; */
+
+    }
+    h1{
+        margin-top: 40px;
+    }
+    .btn{
+        border: 2px solid rgb(12, 107, 0);
+        height: 190px;
+       width: 100%;
+        text-align: center;
+        font-size: 3.8rem;
+        margin: 5px;
+          background-color: brown;
+    }
+    .to{
+        
+        border: 2px solid rgb(12, 107, 0);
+        height: 190px;
+       width: 47%;
+        text-align: center;
+        font-size: 3.8rem;
+        margin: 5px;
+        background-color: brown;
+    }
+
+    .flex3{
+        
+        border: 2px solid rgb(12, 107, 0);
+        height: 190px;
+        width: 25%;
+        text-align: center;
+        font-size: 3.8rem;
+        margin: 5px;
+        background-color: brown;
+    }
+    @media(max-width:768px){
+        .row{
+            flex-wrap: wrap;
+        }
+        .btn{
+            width: 100%;
+        }
+        .to{
+            width: 47%;
+        }
+        .flex3{
+            width: 29.5%;
+        }
+    }
+    @media(max-width:576px){
+    
+        .btn{
+            width: 100%;
+        }
+        .to{
+            width:100%;
+        }
+        .flex3{
+            width:47%;
+        }
+    } 
+ 
+      
+</style>
+<body>
+    <section>
+    <div class="row">
+     <div class="btn"><h1>1</h1></div>
+     <div class="btn"><h1>2</h1></div>
+    </div>
+</section>
+<section>
+    <div class="row">
+        <div class="to"><h1>1</h1></div>
+        <div class="to"><h1>2</h1></div>
+        <div class="to"><h1>3</h1></div>
+    </div>
+</section>
+
+<section>
+    <div class="row">
+        <div class="flex3"><h1>1</h1></div>
+        <div class="flex3"><h1>2</h1></div>
+        <div class="flex3"><h1>3</h1></div>
+        <div class="flex3"><h1>4</h1></div>
+        <div class="flex3"><h1>5</h1></div>
+        <div class="flex3"><h1>6</h1></div>
+    </div>
+</section>
+</body>
+</html>
